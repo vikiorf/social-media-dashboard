@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="index.js" defer></script>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="body-dark-bg">
+    <header id="header" class="header-dark">
+      <div id="header-start">
+        <h1 id="dashboard-heading">Social Media Dashboard</h1>
+        <p id="total-followers-heading" class="total-followers-heading-dark">
+          Total Followers: 23,004
+        </p>
+      </div>
+      <hr />
+      <div id="mode-panel">
+        <p id="theme-heading" class="theme-heading-dark">Dark Mode</p>
+        <div id="slider-container">
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <ul id="main-card-container">
+      <li class="main-card main-card-dark" id="facebook-main-card">
+        <div class="main-card-header">
+          <img src="./images/icon-facebook.svg" alt="facebook" />
+          <p>@nathanf</p>
+        </div>
+        <h1 class="main-card-heading-dark">1987</h1>
+        <p class="main-card-followers-text">Followers</p>
+        <div class="main-card-today-container">
+          <img src="./images/icon-up.svg" alt="Up" />
+          <p class="main-card-today-text-green">12 Today</p>
+        </div>
+      </li>
+
+      <li class="main-card main-card-dark" id="twitter-main-card">
+        <div class="main-card-header">
+          <img src="./images/icon-twitter.svg" alt="Twitter" />
+          <p>@nathanf</p>
+        </div>
+        <h1 class="main-card-heading-dark">1044</h1>
+        <p class="main-card-followers-text">Followers</p>
+        <div class="main-card-today-container">
+          <img src="./images/icon-up.svg" alt="Up" />
+          <p class="main-card-today-text-green">99 Today</p>
+        </div>
+      </li>
+
+      <li class="main-card main-card-dark" id="ig-main-card">
+        <div class="main-card-header">
+          <img src="./images/icon-instagram.svg" alt="Instagram" />
+          <p>@realnathanf</p>
+        </div>
+        <h1 class="main-card-heading-dark">11k</h1>
+        <p class="main-card-followers-text">Followers</p>
+        <div class="main-card-today-container">
+          <img src="./images/icon-up.svg" alt="Up" />
+          <p class="main-card-today-text-green">1099 Today</p>
+        </div>
+      </li>
+
+      <li class="main-card main-card-dark" id="youtube-main-card">
+        <div class="main-card-header">
+          <img src="./images/icon-youtube.svg" alt="Youtube" />
+          <p>Nathan F.</p>
+        </div>
+        <h1 class="main-card-heading-dark">8239</h1>
+        <p class="main-card-followers-text">Subscribers</p>
+        <div class="main-card-today-container">
+          <img src="./images/icon-down.svg" alt="Down" />
+          <p class="main-card-today-text-red">144 Today</p>
+        </div>
+      </li>
+    </ul>
+
+    <h1 id="overview-heading" class="overview-heading-dark">Overview - Today</h1>
+    <ul id="small-cards-container">
+      <li class="small-card small-card-dark">
+        <p>Page Views</p>
+        <img src="./images/icon-facebook.svg" alt="facebook" />
+        <h1 class="small-card-heading-dark">87</h1>
+        <div class="small-card-rating-container">
+          <img src="./images/icon-up.svg" alt="Up" />
+          <p class="small-card-rating-text-green">3%</p>
+        </div>
+      </li>
+
+      <li class="small-card small-card-dark">
+        <p class="small-card-title">Likes</p>
+        <img src="./images/icon-facebook.svg" alt="facebook" />
+        <h1 class="small-card-heading-dark">52</h1>
+        <div class="small-card-rating-container">
+          <img src="./images/icon-down.svg" alt="Down" />
+          <p class="small-card-rating-text-red">2%</p>
+        </div>
+      </li>
+
+      <li class="small-card small-card-dark">
+        <p>Likes</p>
+        <img src="./images/icon-instagram.svg" alt="Instagram" />
+        <h1 class="small-card-heading-dark">5462</h1>
+        <div class="small-card-rating-container">
+          <img src="./images/icon-up.svg" alt="Up" />
+          <p class="small-card-rating-text-green">2257%</p>
+        </div>
+      </li>
+
+      <li class="small-card small-card-dark">
+        <p>Profile Views</p>
+        <img src="./images/icon-instagram.svg" alt="Instagram" />
+        <h1 class="small-card-heading-dark">52k</h1>
+        <div class="small-card-rating-container">
+          <img src="./images/icon-up.svg" alt="Up" />
+          <p class="small-card-rating-text-green">1375%</p>
+        </div>
+      </li>
+
+      <li class="small-card small-card-dark">
+        <p>Retweets</p>
+        <img src="./images/icon-twitter.svg" alt="Twitter" />
+        <h1 class="small-card-heading-dark">117</h1>
+        <div class="small-card-rating-container">
+          <img src="./images/icon-up.svg" alt="Up" />
+          <p class="small-card-rating-text-green">303%</p>
+        </div>
+      </li>
+
+      <li class="small-card small-card-dark">
+        <p>Likes</p>
+        <img src="./images/icon-twitter.svg" alt="Twitter" />
+        <h1 class="small-card-heading-dark">507</h1>
+        <div class="small-card-rating-container">
+          <img src="./images/icon-up.svg" alt="Up" />
+          <p class="small-card-rating-text-green">553%</p>
+        </div>
+      </li>
+
+      <li class="small-card small-card-dark">
+        <p>Likes</p>
+        <img src="./images/icon-youtube.svg" alt="Youtube" />
+        <h1 class="small-card-heading-dark">107</h1>
+        <div class="small-card-rating-container">
+          <img src="./images/icon-down.svg" alt="Down" />
+          <p class="small-card-rating-text-red">19%</p>
+        </div>
+      </li>
+
+      <li class="small-card small-card-dark">
+        <p>Total Views</p>
+        <img src="./images/icon-youtube.svg" alt="Youtube" />
+        <h1 class="small-card-heading-dark">1407</h1>
+        <div class="small-card-rating-container">
+          <img src="./images/icon-down.svg" alt="Down" />
+          <p class="small-card-rating-text-red">12%</p>
+        </div>
+      </li>
+    </ul>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/vikiorf">vikiorf</a>.
+    </div>
+  </body>
+</html>
